@@ -1,11 +1,12 @@
+----
 # *Something weird with paths in registry after the menu options get created (at least when installing with --user). Icons were missing and path was messed up Might need to fix this later or just manually work around it.*
-> Install path is `Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\background\shell\(FOLDERS)`
-> 
-> Had to manually edit the path for icon and cmd at registry key path since it was missing `\` between directories
+- Install path is `Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\background\shell\(FOLDERS)`.
+- Had to manually edit the path for icon and cmd at registry key path since it was missing `\` between directories.
+- To remove other entries, for example if you are only using mingw64, just delete their folders at reg key path. This is also how you can uninstall the shell entries.
+----
+----
 
 This implementation should work for MSYS2 and MINGW32/64 shells that come with MSYS2.
-
-##
 
 # <ins>Right click "Bash-here" Shortcut in Context Menu for MSYS2 MINGW32/64 shell
 This is all the configuration files needed for adding "bash here" options in 
