@@ -1,5 +1,6 @@
 ----
-# *Something weird with paths in registry after the menu options get created (at least when installing with --user). Icons were missing and path was messed up Might need to fix this later or just manually work around it.*
+# Something weird with paths in registry after the menu options get created (at least when installing with --user). 
+# Doesn't get fixed running the `.reg` file, and icons were missing and path was messed up. Might need to fix this later or just manually work around it.
 - Install path is `Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\background\shell\(FOLDERS)`.
 - Had to manually edit the path for icon and cmd at registry key path since it was missing `\` between directories.
 - To remove other entries, for example if you are only using mingw64, just delete their folders at reg key path. This is also how you can uninstall the shell entries.
