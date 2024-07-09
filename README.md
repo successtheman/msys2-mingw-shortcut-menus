@@ -2,6 +2,11 @@
 This is all the configuration files needed for adding "bash here" options in 
 the Windows right-click shortcut/context menu. 
 
+## Something weird with paths in registry after it is created (at least when installing with --user) 
+> Install path is `Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\background\shell\(FOLDERS)`
+> 
+> Had to manually edit the path for icon and cmd at registry key path since it was missing `\` between directories
+
 This implementation should work for MSYS2 and MINGW32/64 shells that come with MSYS2.
 
 
